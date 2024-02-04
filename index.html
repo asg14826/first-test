@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //targil 1
+        let arr1 = [1, 2, 3, 4]
+
+        function func1(arr) {
+            return arr.map((element) => {
+                return element * 5
+            })
+        }
+        console.log(func1(arr1));
+
+        //b
+
+        function func(arr) {
+            arr.forEach(element => {
+                console.log(element * 5);
+            });
+        }
+        func(arr1)
+        //targil 2
+        let arr2 = [9, 11, 17, 1]
+
+        function func2(arr) {
+            return arr.findIndex(element => element > 12)
+        }
+        console.log(func2(arr2));
+
+        //targil 3
+        let arr3 = [8, 6, 4, 2]
+
+        function func3(arr) {
+            return arr.every((element) => element % 6 == 0)
+        }
+
+        console.log(func3(arr3));
+
+        //targil 4
+        let arr4 = [12, 15, 3, 1]
+
+        function func4(arr) {
+            return arr.some(element => element >= 20)
+        }
+        console.log(func4(arr4));
+
+        //targil 5
+        let arr5 = [1, 'a', 6, 'b']
+
+        function func5(arr) {
+            return arr.filter(elelment => typeof elelment === "string")
+        }
+
+        console.log(func5(arr5));
+
+        //tragil 6
+
+        let arr6 = [8, '6', 4, '3']
+
+        function func6(arr) {
+            return arr.find(element => {
+                return element > 5 && typeof element == 'number'
+            })
+        }
+
+        console.log(func6(arr6));
+
+        //targil 7
+        let arr7 = [4, 3, 2, 1]
+
+        function func7(arr) {
+            return arr.map((element) => {
+                return element * 2
+            })
+        }
+        console.log(func7(arr7));
+
+        //targil 8 
+        let arr8 = [7, 5, 3, 1]
+
+        function func8(arr) {
+            return arr.every(element => element < 9)
+        }
+
+        console.log(func8(arr8));
+        //targil 9
+
+        let arr9 = [6, 5, 4, 3, 2, 1]
+
+        function func9(arr) {
+            return arr.filter((element) => {
+                return element % 2 == 1
+            })
+        }
+        console.log(func9(arr9));
+
+        //targil 10
+
+        let arr10 = ['banana', 'apple', 'orange']
+
+        function func10(arr) {
+            return arr.map(element => element += "-java")
+        }
+
+        console.log(func10(arr10));
+
+        //targil 11 
+
+        let arr11 = ["hello", "world", "programing", "computers"]
+
+        function func11(arr) {
+            return arr.findIndex(element => element.length >= 2)
+        }
+
+        console.log(func11(arr11));
+
+        //targil 12 
+
+        let arr12 = ["cat", "elephant", "mouse", "bunny"]
+
+        function func12(arr) {
+            return arr.every(element => element.length >= 4)
+        }
+
+        console.log(func12(arr12));
+
+        //targil 13
+
+        let arr13 = ["apple", "banana", "cherry", "date"]
+
+        function func13(arr) {
+            return arr.some(element => element.charAt(0) == "b")
+        }
+
+
+        console.log(func13(arr13));
+
+        //targil 14
+
+        let arr14 = ["apple", "banana", "grape", "orange"]
+        function func14(arr) {
+            return arr.filter(element => element.charAt(element.length - 1) == "e")
+        }
+
+        console.log(func14(arr14));
+
+        //targil 15
+
+        let arr15 = ['apple', 'banana', 'cherry']
+
+        function func15(arr) {
+            return arr.find(element => element.includes("b"))
+        }
+
+        console.log(func15(arr15));
+
+        let myDetails = {
+            name: 'avigdor',
+            lastName:'greenblatt',
+            city:'jerusalem',
+            street:'hazon-ish',
+            streetNumber:36,
+            country:'israel',
+            brothers:['yakov','rivka','hana','ester','sarah',],
+            schools:'rambam'
+            
+        }
+
+        let myDetailsJson = JSON.stringify(myDetails)
+        document.write(myDetailsJson)
+    </script>
+</body>
+
+</html>
